@@ -1,93 +1,73 @@
 # PaperPool
 
+本项目的目录结构：
 
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.agileserve.org.cn:8001/paperqsr/paperpool.git
-git branch -M main
-git push -uf origin main
+```bash
+paperpool/
+├── assert_db
+│   └── ...
+├── paper_list.txt
+├── README.md
+└── review_db
+    └── ...
 ```
 
-## Integrate with your tools
+在 `paper_list.txt` 中记录了被筛选出打算或已经阅读的论文条目。条目的格式参考
+[该语雀文档](https://serve.yuque.com/mora7e/is769v/ktw12d2c5s9c04mf)，并在条目
+的头部添加 `% REVIEWED: FALSE` 或 `% REVIEWED: TRUE` 标记该篇论文是否被阅读过。
+条目之间使用一个空行进行分隔。条目均使用“期刊时间-内容摘要”的形式进行唯一命名。
+下面是一个条目的例子：
 
-- [ ] [Set up project integrations](https://gitlab.agileserve.org.cn:8001/paperqsr/paperpool/-/settings/integrations)
+``` bibtex
+% REVIEWED: FALSE
+@inproceedings{FPL22-Cloud-FPGA,
+  author    = {Ruan, Jinjie and Chang, Yisong and Zhang, Ke and Shi, Kan and Chen, Mingyu and Bao, Yungang},
+  title     = {Increasing Flexibility of Cloud FPGA Virtualization},
+  booktitle = {2022 32nd International Conference on Field-Programmable Logic and Applications (FPL)},
+  pages     = {350--357},
+  year      = {2022},
+}
+```
 
-## Collaborate with your team
+在 `review_db` 中记录了对 `paper_list.txt` 中论文的阅读记录。每一个文件对应一条
+阅读记录。文件的命名与上述唯一命名一直，例如：`FPL22-Cloud-FPGA.md`。每一条阅读
+记录的具体格式如下：
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+``` markdown
+# 论文标题
 
-## Test and Deploy
+中文简述标题
 
-Use the built-in continuous integration in GitLab.
+链接到出版商网站的 URL
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+## 研究背景和意义
 
-***
+...
 
-# Editing this README
+## 相关工作及评价
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+...
 
-## Suggestions for a good README
+## 主要方法与创新点
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+...
 
-## Name
-Choose a self-explaining name for your project.
+## 实验设置和结论
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+...
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## 创新、不足和相关性评论
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+...
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+## 对 REVIEW 的评论
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+贵缘（2024.9.3）：...
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+飞羽（2024.9.3）：...
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+...
+```
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+文档中的所有图片均放在 `assert_db` 文件下，并在 `paper_db` 中使用 markdown 语法
+相对链接到图片资源，如 `FPL22-Cloud-FPGA 的主要结构为 ![](assert_db/....jpg)`。
