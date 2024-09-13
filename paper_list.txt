@@ -39,7 +39,7 @@
   year={2023}
 }
 %REVIEWED: FALSE
-@inproceedings{kim2023nvmevirt,
+@inproceedings{FAST23-NVMeVirt,
   title={{NVMeVirt}: A Versatile Software-defined Virtual {NVMe} Device},
   author={Kim, Sang-Hoon and Shim, Jaehoon and Lee, Euidong and Jeong, Seongyeop and Kang, Ilkueon and Kim, Jin-Soo},
   booktitle={21st USENIX Conference on File and Storage Technologies (FAST 23)},
