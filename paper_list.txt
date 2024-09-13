@@ -1,14 +1,14 @@
 % REVIEWED: FALSE
 @inproceedings{FPL22-Cloud-FPGA,
-  author    = {Ruan, Jinjie and Chang, Yisong and Zhang, Ke and Shi, Kan and Chen, Mingyu and Bao, Yungang},
-  title     = {Increasing Flexibility of Cloud FPGA Virtualization}, 
-  booktitle = {2022 32nd International Conference on Field-Programmable Logic and Applications (FPL)}, 
-  pages     = {350--357},
-  year      = {2022},
+  author={Ruan, Jinjie and Chang, Yisong and Zhang, Ke and Shi, Kan and Chen, Mingyu and Bao, Yungang},
+  title={Increasing Flexibility of Cloud FPGA Virtualization}, 
+  booktitle={2022 32nd International Conference on Field-Programmable Logic and Applications (FPL)}, 
+  pages={350--357},
+  year={2022},
 }
 % REVIEWED: FALSE
 @inproceedings{SIGCOMM18-PCIe,
-  title={Understanding PCIe performance for end host networking},
+  title={Understanding PCIe Performance for End Host Networking},
   author={Neugebauer, Rolf and Antichi, Gianni and Zazo, Jos{\'e} Fernando and Audzevich, Yury and L{\'o}pez-Buedo, Sergio and Moore, Andrew W},
   booktitle={Proceedings of the 2018 Conference of the ACM Special Interest Group on Data Communication},
   pages={327--341},
@@ -16,7 +16,7 @@
 }
 % REVIEWED: FALSE
 @inproceedings{FPGA21-debuggovener,
-  title={Interactive debugging at IP block interfaces in FPGAs},
+  title={Interactive Debugging at IP Block Interfaces in FPGAs},
   author={Merlini, Marco Antonio and Poy, Isamu and Chow, Paul},
   booktitle={The 2021 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
   pages={138--144},
@@ -38,14 +38,11 @@
   pages={153--166},
   year={2023}
 }
-%REVIEWED:FALSE
-@article{MACS22-ddio,
-  title={Understanding I/O direct cache access performance for end host networking},
-  author={Wang, Minhu and Xu, Mingwei and Wu, Jianping},
-  journal={Proceedings of the ACM on Measurement and Analysis of Computing Systems},
-  volume={6},
-  number={1},
-  pages={1--37},
-  year={2022},
-  publisher={ACM New York, NY, USA}
+%REVIEWED: FALSE
+@inproceedings{kim2023nvmevirt,
+  title={{NVMeVirt}: A Versatile Software-defined Virtual {NVMe} Device},
+  author={Kim, Sang-Hoon and Shim, Jaehoon and Lee, Euidong and Jeong, Seongyeop and Kang, Ilkueon and Kim, Jin-Soo},
+  booktitle={21st USENIX Conference on File and Storage Technologies (FAST 23)},
+  pages={379--394},
+  year={2023}
 }
