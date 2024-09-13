@@ -15,8 +15,7 @@ paperpool/
 在 `paper_list.txt` 中记录了被筛选出打算或已经阅读的论文条目。条目的格式参考
 [该语雀文档](https://serve.yuque.com/mora7e/is769v/ktw12d2c5s9c04mf)，并在条目
 的头部添加 `% REVIEWED: FALSE` 或 `% REVIEWED: TRUE` 标记该篇论文是否被阅读过。
-条目之间使用一个空行进行分隔。条目均使用“期刊时间-内容摘要”的形式进行唯一命名。
-下面是一个条目的例子：
+条目均使用“期刊时间-内容摘要”的形式进行唯一命名。下面是一个条目的例子：
 
 ``` bibtex
 % REVIEWED: FALSE
