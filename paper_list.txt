@@ -6,3 +6,46 @@
   pages     = {350--357},
   year      = {2022},
 }
+% REVIEWED: FALSE
+@inproceedings{SIGCOMM18-PCIe,
+  title={Understanding PCIe performance for end host networking},
+  author={Neugebauer, Rolf and Antichi, Gianni and Zazo, Jos{\'e} Fernando and Audzevich, Yury and L{\'o}pez-Buedo, Sergio and Moore, Andrew W},
+  booktitle={Proceedings of the 2018 Conference of the ACM Special Interest Group on Data Communication},
+  pages={327--341},
+  year={2018}
+}
+% REVIEWED: FALSE
+@inproceedings{FPGA21-debuggovener,
+  title={Interactive debugging at IP block interfaces in FPGAs},
+  author={Merlini, Marco Antonio and Poy, Isamu and Chow, Paul},
+  booktitle={The 2021 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+  pages={138--144},
+  year={2021}
+}
+% REVIEWED: FALSE
+@inproceedings{MICRO23-khronos,
+  title={Khronos: Fusing Memory Access for Improved Hardware RTL Simulation},
+  author={Zhou, Kexing and Liang, Yun and Lin, Yibo and Wang, Runsheng and Huang, Ru},
+  booktitle={Proceedings of the 56th Annual IEEE/ACM International Symposium on Microarchitecture},
+  pages={180--193},
+  year={2023}
+}
+%REVIEWED: FALSE
+@inproceedings{MICRO23-accelerating,
+  title={Accelerating RTL Simulation with Hardware-Software Co-Design},
+  author={Elsabbagh, Fares and Sheikhha, Shabnam and Ying, Victor A and Nguyen, Quan M and Emer, Joel S and Sanchez, Daniel},
+  booktitle={Proceedings of the 56th Annual IEEE/ACM International Symposium on Microarchitecture},
+  pages={153--166},
+  year={2023}
+}
+%REVIEWED:FALSE
+@article{MACS22-ddio,
+  title={Understanding I/O direct cache access performance for end host networking},
+  author={Wang, Minhu and Xu, Mingwei and Wu, Jianping},
+  journal={Proceedings of the ACM on Measurement and Analysis of Computing Systems},
+  volume={6},
+  number={1},
+  pages={1--37},
+  year={2022},
+  publisher={ACM New York, NY, USA}
+}
