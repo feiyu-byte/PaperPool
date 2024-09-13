@@ -21,11 +21,11 @@ paperpool/
 ``` bibtex
 % REVIEWED: FALSE
 @inproceedings{FPL22-Cloud-FPGA,
-  author    = {Ruan, Jinjie and Chang, Yisong and Zhang, Ke and Shi, Kan and Chen, Mingyu and Bao, Yungang},
-  title     = {Increasing Flexibility of Cloud FPGA Virtualization},
-  booktitle = {2022 32nd International Conference on Field-Programmable Logic and Applications (FPL)},
-  pages     = {350--357},
-  year      = {2022},
+  author={Ruan, Jinjie and Chang, Yisong and Zhang, Ke and Shi, Kan and Chen, Mingyu and Bao, Yungang},
+  title={Increasing Flexibility of Cloud FPGA Virtualization},
+  booktitle={2022 32nd International Conference on Field-Programmable Logic and Applications (FPL)},
+  pages={350--357},
+  year={2022},
 }
 ```
 
